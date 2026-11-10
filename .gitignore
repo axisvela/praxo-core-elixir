@@ -1,4 +1,7 @@
-_build/
-deps/
 build/
-.elixir_ls/
+target/
+dist/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
