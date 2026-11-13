@@ -4,7 +4,7 @@ Dedicated repository for the Elixir implementation of PRAXO-CORE: an
 embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
-- Package: `praxo_core` (`0.6.0`)
+- Package: `praxo_core` (`0.8.0`)
 - Registry: Hex
 - Install: `{:praxo_core, "~> 0.6.0"}`
 - Documentation: https://axisvela.github.io/praxo-core/languages/elixir/
