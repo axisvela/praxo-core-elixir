@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: Hex
 - Install: `{:praxo_core, "~> 0.8.0"}`
 - Documentation: https://axisvela.github.io/praxo-core/languages/elixir/
+- Examples: https://github.com/axisvela/praxo-core-elixir/tree/main/language/elixir/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-elixir
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/elixir
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
