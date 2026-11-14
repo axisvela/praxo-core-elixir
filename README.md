@@ -60,11 +60,13 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | [checkpoint](language/elixir/examples/checkpoint) | This example uses the Elixir Core checkpoint allowlist to encode and decode only registered payload types. |
 | [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.8.0` and verifies an allow/deny governed tool path without local replacements. |
 | [event-sink](language/elixir/examples/event-sink) | This example uses the Elixir Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
+| [hitl](language/elixir/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/elixir/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
 | [mcp](language/elixir/examples/mcp) | This example uses a caller-owned in-process transport with the Elixir MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/elixir/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/elixir/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/elixir/examples/service) | This example defines a transport-neutral request handler boundary with health, principal, and run cases. Wire it into any Elixir HTTP server. |
+| [session-checkpoint](language/elixir/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
 | [streaming](language/elixir/examples/streaming) | This example collects agent stream parts from the Elixir Core and checks the `values` and `messages` lifecycle. |
 | [structured-output](language/elixir/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
 
