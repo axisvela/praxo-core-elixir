@@ -62,6 +62,7 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | [event-sink](language/elixir/examples/event-sink) | This example uses the Elixir Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
 | [hitl](language/elixir/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/elixir/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
+| [live-model](language/elixir/examples/live-model) | This source-mode example connects the Elixir Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/elixir/examples/mcp) | This example uses a caller-owned in-process transport with the Elixir MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/elixir/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/elixir/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
