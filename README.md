@@ -8,9 +8,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | --- | --- |
 | Package | `praxo_core` |
 | Registry | [Hex](https://hex.pm/packages/praxo_core) |
-| Install | `{:praxo_core, "~> 0.9.0"}` |
+| Install | `{:praxo_core, "~> 0.9.1"}` |
 | Source version | `0.9.1` |
-| Published version | `0.9.0` |
+| Published version | `0.9.1` |
 | Source tag | `elixir/v0.9.1` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
@@ -33,7 +33,7 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 Install the published package:
 
 ```elixir
-{:praxo_core, "~> 0.9.0"}
+{:praxo_core, "~> 0.9.1"}
 ```
 
 See the [full Elixir README](language/elixir/README.md) for complete installation, build, and verification commands.
@@ -58,7 +58,7 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/elixir/examples/checkpoint) | This example uses the Elixir Core checkpoint allowlist to encode and decode only registered payload types. |
-| [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.9.0` and verifies an allow/deny governed tool path without local replacements. |
+| [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.9.1` and verifies an allow/deny governed tool path without local replacements. |
 | [event-sink](language/elixir/examples/event-sink) | This example uses the Elixir Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
 | [hitl](language/elixir/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/elixir/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
