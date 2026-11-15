@@ -9,9 +9,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Package | `praxo_core` |
 | Registry | [Hex](https://hex.pm/packages/praxo_core) |
 | Install | `{:praxo_core, "~> 0.9.0"}` |
-| Source version | `0.9.0` |
+| Source version | `0.9.1` |
 | Published version | `0.9.0` |
-| Source tag | `elixir/v0.9.0` |
+| Source tag | `elixir/v0.9.1` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/elixir/ |
