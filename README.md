@@ -57,6 +57,7 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 
 | Example | What it shows |
 | --- | --- |
+| [advanced-delegation](language/elixir/examples/advanced-delegation) | Application-level governed delegation checks for the Elixir Core. |
 | [checkpoint](language/elixir/examples/checkpoint) | This example uses the Elixir Core checkpoint allowlist to encode and decode only registered payload types. |
 | [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.9.1` and verifies an allow/deny governed tool path without local replacements. |
 | [event-sink](language/elixir/examples/event-sink) | This example uses the Elixir Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
