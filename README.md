@@ -66,6 +66,7 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | [live-model](language/elixir/examples/live-model) | This source-mode example connects the Elixir Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/elixir/examples/mcp) | This example uses a caller-owned in-process transport with the Elixir MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/elixir/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
+| [representative-chain](language/elixir/examples/representative-chain) | This deterministic example exercises the same application seams as the Go, Python, and TypeScript representative chains without a live provider: |
 | [retry](language/elixir/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/elixir/examples/service) | This example defines a transport-neutral request handler boundary with health, principal, and run cases. Wire it into any Elixir HTTP server. |
 | [session-checkpoint](language/elixir/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
