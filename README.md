@@ -1,6 +1,6 @@
 # PRAXO-CORE for Elixir
 
-PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its native Elixir Core with source tag `elixir/v0.9.2`. It passes all eleven shared vector groups with `Elixir 1.20.4` on `Erlang/OTP 29` and includes the native agent loop, context compaction, memory store, path policy, checkpoint allowlist, tool-call parsing, and opt-in tool selection, PII redaction, structured output validation, call limits, and human-in-the-loop interrupt decisions. Vector coverage does not establish full Core parity or production readiness.
+PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its native Elixir Core with source tag `elixir/v0.10.0`. It passes all eleven shared vector groups with `Elixir 1.20.4` on `Erlang/OTP 29` and includes the native agent loop, context compaction, memory store, path policy, checkpoint allowlist, tool-call parsing, and opt-in tool selection, PII redaction, structured output validation, call limits, and human-in-the-loop interrupt decisions. Vector coverage does not establish full Core parity or production readiness.
 
 ## At a glance
 
@@ -9,9 +9,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Package | `praxo_core` |
 | Registry | [Hex](https://hex.pm/packages/praxo_core/0.9.2) |
 | Install | `{:praxo_core, "~> 0.9.2"}` |
-| Source version | `0.9.2` |
+| Source version | `0.10.0` |
 | Published version | `0.9.2` |
-| Source tag | `elixir/v0.9.2` |
+| Source tag | `elixir/v0.10.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/elixir/ |
@@ -22,7 +22,6 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 - OpenAI-compatible model: native
 - Anthropic model: native
 - Gemini model: native
-- Process plugin host: native
 - MCP client: native
 - Harmovela sink: native
 - OpenTelemetry sink: native (transport seam)
@@ -43,10 +42,9 @@ See the [full Elixir README](language/elixir/README.md) for complete installatio
 
 | Capability | Status | Detail |
 | --- | --- | --- |
-| OpenAI-compatible model | native | `Praxo.OpenAICompatible`; SSE streaming reassembly |
-| Anthropic model | native | `Praxo.Anthropic` ; Anthropic SSE streaming |
-| Gemini model | native | `Praxo.Gemini`; Gemini SSE streaming |
-| Process plugin host | native | `Praxo.PluginProcess`; JSON-Lines stdio, token auth, health, timeout, cancel |
+| OpenAI-compatible model | native | `Praxo.OpenAICompatible`; `streaming_model/1` and SSE reassembly cover content, tool calls, usage, and finish reason |
+| Anthropic model | native | `Praxo.Anthropic`; `streaming_model/1` reassembles Anthropic SSE |
+| Gemini model | native | `Praxo.Gemini`; `streaming_model/1` reassembles Gemini SSE |
 | MCP client | native | `Praxo.Mcp`; stdio, plus `Praxo.McpHttp.transport` for Streamable HTTP 2025-03-26 |
 | Harmovela sink | native | `Praxo.HarmovelaSink` |
 | OpenTelemetry sink | native (transport seam) | `Praxo.OtelSink`; caller supplies OTLP/HTTP transport |
