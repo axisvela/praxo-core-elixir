@@ -12,6 +12,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Source version | `0.10.0` |
 | Published version | `0.10.0` |
 | Source tag | `elixir/v0.10.0` |
+| Tutorial tag | `elixir/tutorial/v0.1.0` |
+| Application tag | `elixir/application/v0.1.0` |
+| Examples tag | `elixir/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/elixir/ |
@@ -72,6 +75,26 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | [session-checkpoint](language/elixir/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
 | [streaming](language/elixir/examples/streaming) | This example collects agent stream parts from the Elixir Core and checks the `values` and `messages` lifecycle. |
 | [structured-output](language/elixir/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/elixir/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/elixir/Tutorial) | - [Knowledge Maintenance (OP-03)](knowledge-maintenance/README.md): source Elixir Core, fixed knowledge diff and a review-only revision draft; no Wiki writes. |
+| [aiops-rca](language/elixir/Tutorial/aiops-rca) | Fixed trace/metric/log signals yield suspect `checkout-api` and a review-only rollback. No live telemetry or remediation. |
+| [community-governance](language/elixir/Tutorial/community-governance) | Fixed issues produce four classified items and a review-only reviewer request. No GitHub API, closure or impersonation. |
+| [knowledge-maintenance](language/elixir/Tutorial/knowledge-maintenance) | A bounded first slice of [OP-03](https://axisvela.github.io/praxo-core/getting-started/agent-scenarios/), not an autonomous Wiki service. It diffs two fixed knowledge versions,... |
+| [soc-correlation](language/elixir/Tutorial/soc-correlation) | Fixed EDR/firewall events produce a critical count; one critical event selects an isolation review, clean input selects monitoring. No host blocking. |
+
+## Reference Applications
+
+Complete AI-native reference applications live under `language/elixir/application`.
+
+| Path | What it shows |
+| --- | --- |
+| [application](language/elixir/application) | An OTP service where the agent drives the primary incident workflow: an operator submits an incident intent, the agent searches supervised telemetry, diagnoses the suspect, and... |
 
 ## Verify
 
