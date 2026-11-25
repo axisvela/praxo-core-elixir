@@ -12,9 +12,6 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Source version | `0.10.0` |
 | Published version | `0.10.0` |
 | Source tag | `elixir/v0.10.0` |
-| Tutorial tag | `elixir/tutorial/v0.1.0` |
-| Application tag | `elixir/application/v0.1.0` |
-| Examples tag | `elixir/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/elixir/ |
