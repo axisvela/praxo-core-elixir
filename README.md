@@ -7,11 +7,12 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Field | Value |
 | --- | --- |
 | Package | `praxo_core` |
-| Registry | [Hex](https://hex.pm/packages/praxo_core/0.10.0) |
-| Install | `{:praxo_core, "~> 0.10.0"}` |
+| Registry | [Hex](https://hex.pm/packages/praxo_core/0.11.0) |
+| Install | `{:praxo_core, "~> 0.11.0"}` |
 | Source version | `0.11.0` |
-| Published version | `0.10.0` |
-| Source tag | `elixir/v0.11.0` |
+| Published version | `0.11.0` |
+| Publication status | published |
+| Canonical source tag | [`elixir/v0.11.0`](https://github.com/axisvela/praxo-core/tree/elixir/v0.11.0) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/elixir/ |
@@ -33,7 +34,7 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 Install the published package:
 
 ```elixir
-{:praxo_core, "~> 0.10.0"}
+{:praxo_core, "~> 0.11.0"}
 ```
 
 See the [full Elixir README](language/elixir/README.md) for complete installation, build, and verification commands.
@@ -59,7 +60,7 @@ Runnable examples live under [`language/elixir/examples`](language/elixir/exampl
 | --- | --- |
 | [advanced-delegation](language/elixir/examples/advanced-delegation) | Application-level governed delegation checks for the Elixir Core. |
 | [checkpoint](language/elixir/examples/checkpoint) | This example uses the Elixir Core checkpoint allowlist to encode and decode only registered payload types. |
-| [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.9.1` and verifies an allow/deny governed tool path without local replacements. |
+| [consumer](language/elixir/examples/consumer) | This module uses published Hex `praxo_core` `0.11.0` and verifies an allow/deny governed tool path without local replacements. |
 | [event-sink](language/elixir/examples/event-sink) | This example uses the Elixir Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
 | [hitl](language/elixir/examples/hitl) | This example demonstrates a write tool that requires human approval: |
 | [identity-policy](language/elixir/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
@@ -79,15 +80,15 @@ Scenario-oriented tutorials live under `language/elixir/Tutorial`. Planning cont
 
 | Path | What it shows |
 | --- | --- |
-| [Tutorial](language/elixir/Tutorial) | - [Knowledge Maintenance (OP-03)](knowledge-maintenance/README.md): source Elixir Core, fixed knowledge diff and a review-only revision draft; no Wiki writes. |
+| [Tutorial](language/elixir/Tutorial) | - [Knowledge Maintenance (OP-03)](https://github.com/axisvela/praxo-core/blob/main/language/elixir/Tutorial/knowledge-maintenance/README.md): source Elixir Core, fixed knowledge diff and a review-only revision draft; no Wiki writes. |
 | [aiops-rca](language/elixir/Tutorial/aiops-rca) | Fixed trace/metric/log signals yield suspect `checkout-api` and a review-only rollback. No live telemetry or remediation. |
 | [community-governance](language/elixir/Tutorial/community-governance) | Fixed issues produce four classified items and a review-only reviewer request. No GitHub API, closure or impersonation. |
-| [knowledge-maintenance](language/elixir/Tutorial/knowledge-maintenance) | A bounded first slice of [OP-03](https://axisvela.github.io/praxo-core/getting-started/agent-scenarios/), not an autonomous Wiki service. It diffs two fixed knowledge versions,... |
+| [knowledge-maintenance](language/elixir/Tutorial/knowledge-maintenance) | A bounded first slice of [OP-03](https://axisvela.github.io/praxo-core/getting-started/agent-scenarios/), not an autonomous Wiki service. It diffs two fixed knowledge versions, reports changed sections and removed duplicates, and drafts a review-only revision. This uses the source Elixir Core; no network, credentials or packages beyond Elixir/OTP are required. |
 | [soc-correlation](language/elixir/Tutorial/soc-correlation) | Fixed EDR/firewall events produce a critical count; one critical event selects an isolation review, clean input selects monitoring. No host blocking. |
 
 ## Reference Applications
 
-Complete AI-native reference applications live under `language/elixir/application`.
+Reference application sources live under `language/elixir/application`. See each README for implementation scope and validation status.
 
 | Path | What it shows |
 | --- | --- |
@@ -134,7 +135,7 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 - Mirror repository: https://github.com/axisvela/praxo-core-elixir
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
 
-This repository is a discovery mirror of the canonical Elixir source. The monorepo remains the source of truth and the release workflow source.
+This repository is a discovery mirror of the canonical Elixir source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
 PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
