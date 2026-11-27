@@ -7,10 +7,10 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Field | Value |
 | --- | --- |
 | Package | `praxo_core` |
-| Registry | [Hex](https://hex.pm/packages/praxo_core/0.11.0) |
+| Registry | [Hex](https://hex.pm/packages/praxo_core/0.11.1) |
 | Install | `{:praxo_core, "~> 0.11.1"}` |
 | Source version | `0.11.1` |
-| Published version | `0.11.0` |
+| Published version | `0.11.1` |
 | Publication status | published |
 | Canonical source tag | [`elixir/v0.11.1`](https://github.com/axisvela/praxo-core/tree/elixir/v0.11.1) |
 | Tier | Core |
